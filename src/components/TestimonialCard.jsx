@@ -44,22 +44,18 @@ const TestimonialCard = () => {
                 </p>
 
                 {/* Client logos section */}
-                <div className="d-flex flex-wrap justify-content-between align-items-center gap-2">
-                    {/* Logos */}
+                <div className="d-flex flex-sm-row flex-column justify-content-between align-items-center">
                     {logos.map((logo, index) => (
-                        <div className="col-4 col-sm-3 col-md-1 text-center" key={index}>
-                            <img
-                                src={logo} // Directly use the logo variable
-                                width={35}
-                                height={35}
-                                alt={`client-${index + 1}`}
-                                className="img-fluid" // Makes the images responsive
-                            />
-                        </div>
+                        <img
+                            key={index}
+                            src={logo}
+                            width={35}
+                            height={35}
+                            alt={`client-${index + 1}`}
+                            className="mx-1 my-1" // Reduce margin here
+                        />
                     ))}
-
-                    {/* "Meet All Customers" link section */}
-                    <section className="d-flex align-items-center justify-content-center text-center col-12 mt-3 mt-sm-0">
+                    <section className="d-flex align-items-center justify-content-center text-center">
                         <p className="text-success fw-semibold fs-5 font-inter">
                             Meet All Customers{" "}
                             <svg
@@ -78,6 +74,9 @@ const TestimonialCard = () => {
                         </p>
                     </section>
                 </div>
+
+
+
 
             </div>
 
