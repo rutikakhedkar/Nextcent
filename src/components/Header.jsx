@@ -1,6 +1,8 @@
 import React from 'react';
 import logo from "../assets/Images/logos/next.png";
 import { Link } from "react-router-dom";
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+
 
 const Header = () => {
   const navLinks = [
