@@ -1,5 +1,5 @@
 import React from 'react';
-import heroImage from '../assets/Images/herobg.svg'; // Replace with your image path
+import heroImage from '../assets/Images/Add a subheading.png'; // Replace with your image path
 
 const HeroSection = () => {
   return (
